@@ -3,7 +3,7 @@ let visitors = [
   {
     name: "John Smith",
     coins: 50,
-    image: "images/U1.webp",
+    image: "./images/U1.webp",
     visitedAnimals: [],
     FeededAnimals: [],
   },
@@ -256,7 +256,7 @@ currentVisitor = JSON.parse(localStorage.getItem("currentVisitor")) || {
 // נב בר
 function NavBar() {
   const template = `
-  <img id="HomeBtn" src="/images/homebtnnew.png" alt="homecliker" />
+  <img id="HomeBtn" src="images/homebtnnew.png" alt="homecliker" />
   <div class="visitor-dropdown"></div>
   <div class="personalDetails">
   <img class="card-img-visitor" src="${currentVisitor.image}" alt="${currentVisitor.name}"/>
@@ -273,7 +273,7 @@ function NavBar() {
     </button>
   </div>
   </div>
-  <img id="dashBtn" src="/images/dashbtn.png" alt="dashboardcliker" />
+  <img id="dashBtn" src="images/dashbtn.png" alt="dashboardcliker" />
 `;
   const wrapper = document.createElement("div");
   wrapper.className = "topNavbar";
