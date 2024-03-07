@@ -1,4 +1,3 @@
-
 function createNewVisitor(event) {
   event.preventDefault();
   const nameInput = document.querySelector("#name");
@@ -12,7 +11,7 @@ function createNewVisitor(event) {
 
   const visitorExists = (nameInput) => {
     let exists = false;
-//בדיקה אם המשתמש קיים
+    //בדיקה אם המשתמש קיים
     visitors.forEach((Element) => {
       if (Element.name == nameInput.value) {
         alert("The user already exists! Please choose another User name");
@@ -42,7 +41,7 @@ function createNewVisitor(event) {
   validateFormInputs();
   const isExsists = visitorExists(nameInput);
   if (!isExsists) {
-    console.log((window.location.href = "/login.html"));
+    console.log((window.location.href = "login.html"));
   }
 }
 
