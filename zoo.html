@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Zoo</title>
+    <script src="./main.js"></script>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <header></header>
+  <body id="zoo">
+    <div class="filter-card">
+      <form action="">
+        <div class="search-card">
+          <label for="search">search :</label>
+          <input
+            type="text"
+            id="searchInput"
+            placeholder="search by Name"
+            name="search"
+          />
+        </div>
+        <label for="weight">weight : </label>
+        <input
+          id="weightInput"
+          type="number"
+          placeholder="search by weight"
+          name="weight"
+        />
+        <label for="height">height : </label>
+        <input
+          id="heightInput"
+          type="number"
+          placeholder="search by height"
+          name="height"
+        />
+        <label for="color">color : </label>
+        <input
+          id="colorInput"
+          type="text"
+          placeholder="search by color"
+          name="color"
+        />
+        <label for="habitat">habitat : </label>
+        <input
+          id="habitatInput"
+          type="text"
+          placeholder="search by habitat"
+          name="habitat"
+        />
+        <label for="isPredatorSelect">Is Predator:</label>
+        <select id="isPredatorSelect">
+          <option value="" selected disabled>Select an option</option>
+          <option value="true">True</option>
+          <option value="false">False</option>
+        </select>
+
+        <button id="clearFiltersButton">clear filters</button>
+      </form>
+    </div>
+    <div id="animal-cards" class="scrollable-container"></div>
+    <script src="./zoo.js"></script>
+  </body>
+</html>

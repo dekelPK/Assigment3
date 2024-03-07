@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Document</title>
+  </head>
+  <body id="index">
+    <div class="btn">
+      <button id="signupButton">sign up</button>
+      <button id="loginBtn">
+        log in <br /><span style="font-size: 15px">(or change user)</span>
+      </button>
+      <button id="ZooBtn">Zoo World's</button>
+      <button id="animalBtn">Our Animals</button>
+      <button id="dasBtn">dashboard</button>
+    </div>
+  </body>
+</html>
+<script>
+  document
+    .getElementById("signupButton")
+    .addEventListener("click", function () {
+      window.location.href = "signup.html";
+    });
+  document.getElementById("ZooBtn").addEventListener("click", function () {
+    window.location.href = "zoo.html";
+  });
+  document.getElementById("loginBtn").addEventListener("click", function () {
+    window.location.href = "login.html";
+  });
+  document.getElementById("dasBtn").addEventListener("click", function () {
+    window.location.href = "dashboard.html";
+  });
+  document.getElementById("animalBtn").addEventListener("click", function () {
+    window.location.href = "animal.html";
+  });
+</script>

@@ -1,0 +1,548 @@
+@import url("https://fonts.googleapis.com/css2?family=Inconsolata:wght@200..900&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Protest+Riot&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inconsolata:wght@200..900&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Protest+Riot&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap");
+body {
+  background: rgb(133, 139, 133);
+  background: linear-gradient(74deg, rgb(52, 153, 94) 18%, rgb(17, 69, 31) 57%);
+  padding: 20px 80px;
+  align-items: center;
+  justify-content: center;
+  overflow-x: hidden;
+}
+.filter-card {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #51351aa9; 
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s ease; 
+  font-family: "Shadows Into Light", cursive;
+  font-weight: 400;
+  font-style: normal;
+  margin: 0 auto;
+  margin-top: 100px;
+}
+
+.filter-card:hover {
+  background-color: #614c3e85; 
+}
+
+.filter-card form {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.filter-card label {
+  color: #fff; 
+  margin-right: 10px;
+}
+
+.filter-card input {
+  padding: 8px;
+  border: 1px solid #7b614f;
+  border-radius: 4px;
+  margin-bottom: 10px;
+}
+
+.filter-card input:focus {
+  outline: none;
+  border-color: #9b7c62; 
+}
+
+
+
+.search-card {
+  margin-right: 15px; 
+}
+
+.filter-card::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: radial-gradient(
+    ellipse at center,
+    rgba(255, 255, 255, 0.2) 0%,
+    rgba(255, 255, 255, 0) 75%
+  );
+  pointer-events: none;
+}
+
+#index {
+  background: linear-gradient(
+      rgba(255, 255, 255, 0.243),
+      rgba(255, 255, 255, 0.135)
+    ),
+    url("images/newcover2.jpeg");
+
+  background-size: cover;
+}
+.btn {
+  padding-top: 50%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+#index button {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+  background-color: #ffb300c5;
+  min-height: 100px;
+  min-width: 200px;
+  font-size: 30px;
+  color: rgb(7, 7, 7);
+  flex-direction: column;
+  border-radius: 15px;
+  margin: 10px;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+  font-family: "Protest Riot", sans-serif;
+}
+#index button:hover {
+  transform: scale(1.1);
+  opacity: 0.8;
+  background-color: #ffa200;
+}
+
+#placeholder {
+  display: flex;
+  justify-content: space-between;
+  margin: 20px;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+#create-visitor-form {
+  text-align: center;
+  color: black;
+  background-color: #ffe9d096;
+  display: block;
+  color: rgb(88, 59, 25);
+  padding-top: 10px;
+  font-size: 50px;
+  font-family: "Protest Riot", sans-serif;
+  margin: 0 auto;
+  width: 759px;
+  margin-top: 100px;
+}
+#create-visitor-form label {
+  -webkit-text-stroke: 1px black;
+}
+#create-visitor-form input {
+  height: 30px;
+  width: 382px;
+  font-size: 15px;
+  -webkit-text-stroke: 1px black;
+  font-family: "Press Start 2P", cursive;
+}
+
+#logiheader {
+  height: 60px;
+}
+#HomeBtn,
+#dashBtn {
+  height: 60px;
+  width: 60px;
+}
+
+#submitInput {
+  border-radius: 10px;
+  background-color: rgba(70, 46, 27, 0.57);
+}
+#SignUp {
+  background-image: url(/images/signup.jpeg);
+  background-repeat: no-repeat;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+#SignUp h1 {
+  font-size: 100px;
+  color: bisque;
+  text-align: center;
+  text-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5); /* הוספת טקסט שמש */
+  letter-spacing: 5px; /* ריווח בין אותיות */
+  margin-bottom: 20px; /* מרווח מתחת לכותרת */
+  font-family: "Press Start 2P", cursive; /* קטע זה משתמש בגופן דומה לגופן שמשמש בקונסולות גיימינג */
+  -webkit-text-stroke: 3px black; /* הוספת מסגרת לאותיות */
+  -webkit-text-fill-color: bisque;
+}
+
+#login {
+  background: linear-gradient(
+      rgba(255, 255, 255, 0.434),
+      rgba(255, 255, 255, 0.271)
+    ),
+    url("images/newback.jpeg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: auto;
+}
+
+.coinLog {
+  width: 15%;
+  height: 15%;
+}
+
+#login h1 {
+  font-family: "Protest Riot", sans-serif;
+  text-align: center;
+  font-size: 70px;
+}
+
+#query-input {
+  width: 300px; /* רוחב התיבה */
+  height: 40px; /* גובה התיבה */
+  border: 2px solid #ccc; /* גודל וסוג הגבול */
+  border-radius: 20px; /* עיגול של קצוות התיבה */
+  padding: 10px; /* מרווח בין הטקסט לגבולות התיבה */
+  font-size: 16px; /* גודל הטקסט בתיבה */
+  transition: border-color 0.3s; /* אנימציה של צבע הגבול כאשר מעבירים על התיבה */
+  margin: 0 auto; /* מרכוז התיבה באמצע הדף */
+  display: block; /* תיבת טקסט בלבד, ללא סרגל גלילה */
+}
+
+#query-input:focus {
+  border-color: dodgerblue; /* שינוי צבע הגבול כאשר התיבה ריקה */
+  outline: none; /* מונע את ההדגשה של התיבה לאחר שהיא ריקה */
+}
+
+.visitor-card {
+  max-width: 250px;
+  overflow: hidden;
+  background: rgba(198, 222, 241, 0.543);
+  border-radius: 60px;
+  animation: fade-in 0.4s ease-in forwards;
+  border: 0.2px solid rgb(0, 0, 0);
+  box-shadow: 1px 1px 20px 0 black;
+  border-width: 2px;
+  display: flex;
+  flex: auto;
+  justify-content: center;
+  justify-items: center;
+  align-items: center;
+  font-family: "Protest Riot", sans-serif;
+  font-size: medium;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.7);
+  -webkit-text-stroke: 0.02px rgb(246, 247, 248); /* קו מתאר לאותיות */
+}
+
+.visitor-card:hover {
+  transform: scale(1.1);
+  opacity: 0.8;
+}
+
+.visitor-card img {
+  max-width: 100%;
+  object-fit: contain;
+  max-height: 100px;
+  margin: 0 auto;
+  max-width: 100px;
+  border-radius: 50%;
+}
+
+.visitor-card p {
+  text-align: center;
+  padding: 2px 6px;
+}
+
+#connect {
+  background-color: #333; /* צבע רקע כהה */
+  color: #fff; /* צבע טקסט בהיר */
+  padding: 10px 20px; /* מרווחיות בתוך הכפתור */
+  border: none; /* להסיר גבולות */
+  border-radius: 5px; /* פינות מעוגלות */
+  cursor: pointer; /* הפעלת הסמן כקרסור */
+}
+
+#connect:hover {
+  background-color: #555; /* צבע רקע חשוף כאשר העכבר מעביר מעליו */
+}
+#connect {
+  border-bottom: solid;
+  border-radius: 10px;
+  align-content: center;
+}
+/* לא עובד לבדוק
+#connect :hover{
+  
+    background-color: lightblue;
+    color: white;
+  
+}
+
+*/
+
+.empty-result {
+  width: 100%;
+  text-align: center;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 90vh;
+}
+
+#Animal-body {
+  background-size: cover;
+  background-image: url("images/allcover.jpeg");
+  background-repeat: no-repeat;
+}
+
+#zoo {
+  background-size: cover;
+  background-attachment: fixed; /* הוסף עמודה זו כדי לשמור על התמונה נגרמת הגלילה */
+  background-image: url("images/allcover.jpeg");
+  background-repeat: no-repeat;
+  height: 100vh;
+  margin: 0; /* הוסף עמודה זו כדי למנוע שוליים בדף */
+}
+#animal-cards {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+  gap: 15px;
+  flex-wrap: nowrap;
+  margin-top: 100px;
+}
+.animal-card {
+  min-width: 180px;
+  overflow: hidden;
+  background: white;
+  border-radius: 20px;
+  animation: fade-in 0.4s ease-in forwards;
+  border-radius: 60px;
+  border: 0.2px solid rgb(0, 0, 0);
+  box-shadow: 1px 1px 20px 0 black;
+  margin: 5px;
+}
+.animal-card:hover {
+  transform: scale(1.1);
+  opacity: 0.8;
+}
+
+.animal-card p {
+  text-align: center;
+  padding: 2px 6px;
+  font-family: "Shadows Into Light", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.animal-card img {
+  width: 100%;
+  max-width: 100%;
+  object-fit: contain;
+  max-height: 180px;
+  margin: 0 auto;
+  max-width: 250px;
+}
+
+#image img {
+  height: 250px;
+  width: 250px;
+  border-radius: 50%;
+}
+
+.topNavbar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(9, 5, 5, 0.5);
+  padding: 10px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  position: fixed;
+  z-index: 1000;
+  height: 70px;
+}
+
+.personalDetails {
+  display: flex;
+  align-items: center;
+  color: white;
+  justify-content: center;
+}
+
+.card-img-visitor {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.VisitorName,
+.CoinsOfVisitors {
+  margin: 10px;
+  font-family: "Josefin Sans", sans-serif;
+}
+
+#Btns {
+  display: flex;
+  flex-wrap: nowrap;
+}
+
+#resetBtn,
+#logout {
+  background-color: #4caf68;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  margin: 10px;
+  font-family: "Protest Riot", sans-serif;
+}
+
+#logout {
+  background-color: #c6684e;
+}
+
+#logout:hover {
+  background-color: #ac3c3c;
+}
+
+#resetBtn:hover {
+  background-color: #45a049;
+}
+
+#clearFiltersButton {
+  font-family: "Protest Riot", sans-serif;
+}
+
+.visitor-dropdown {
+  margin-left: 20px;
+  padding: 10px;
+}
+
+.visitor-dropdown label,
+.visitor-dropdown select {
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 16px;
+  color: white;
+  padding: 10px;
+}
+
+.visitor-dropdown select {
+  padding: 8px;
+  border: none;
+  background-color: rgba(255, 255, 255, 0.2);
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.visitor-dropdown select:hover {
+  background-color: rgba(255, 255, 255, 0.3);
+}
+
+#PickedAnimal {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #f5f5f53c;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  font-family: "Luckiest Guy", cursive;
+  font-weight: 100;
+  font-style: normal;
+  margin: 100px;
+}
+
+#related-animals {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+  gap: 15px;
+  flex-wrap: nowrap;
+  margin-top: 100px;
+}
+#name {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+#weight,
+#height,
+#color,
+#habitat,
+#isPredator {
+  margin: 5px 0;
+}
+
+#feed-animal {
+  background-color: #4caf50;
+  color: white;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+#feed-animal:hover {
+  background-color: #00ff0d;
+}
+
+#dashboard {
+  background-image: url("images/allcover.jpeg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100vh;
+}
+
+.UserName {
+  padding: 50px;
+  margin: 120px;
+  margin-bottom: 0;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  justify-items: center;
+  font-family: "Shadows Into Light", cursive;
+  font-size: 70px;
+}
+
+#visited-animals,
+#feeded-animals,
+#favorite-animal {
+  background-color: rgba(111, 182, 156, 0.5);
+  color: black;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 16px;
+  margin: 16px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  color: black;
+  font-family: "Shadows Into Light", cursive;
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
+  align-items: center;
+}
+
+.DashData {
+  display: flex;
+  justify-items: center;
+  justify-content: center;
+}
+
+.card-img-coin {
+  width: 3%;
+  height: 3%;
+}
+.scrollable-container {
+  max-height: 550px;
+  overflow-y: auto;
+}
