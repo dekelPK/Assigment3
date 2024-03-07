@@ -80,7 +80,7 @@ function visitAnimal(animalName) {
       }
     });
 
-    window.location.href = "./animal.html";
+    window.location.href = "animal.html";
   }
 }
 

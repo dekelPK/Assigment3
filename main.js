@@ -3,7 +3,7 @@ let visitors = [
   {
     name: "John Smith",
     coins: 50,
-    image: "./images/U1.webp",
+    image: "images/U1.webp",
     visitedAnimals: [],
     FeededAnimals: [],
   },
